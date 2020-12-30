@@ -7,8 +7,11 @@ chrome_options.add_argument('--disable-gpu')   # 禁用GPU硬件加速。如果�
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--window-size=1920,1080')  # 设置当前窗口的宽度和高度
 driver = webdriver.Chrome('chromedriver',chrome_options=chrome_options)
-#driver = webdriver.Chrome()
+#driver = webdriver.Chrome()123
+
 driver.get("https://www.baidu.com/")
- 
+
+
+
 print(driver.page_source)
 driver.quit()
